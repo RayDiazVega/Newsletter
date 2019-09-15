@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+	margin: 0;
+	border: 0;
+  padding: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----End Reset Css-----*/
+
+body {
+	line-height: initial;
+  font-family: 'Conv_Lucida Sans', sans-serif;
+}
+
+.cv {
+	display: flex;
+  flex-wrap: wrap;
+	width: 100%;
+	max-width: 720px;
+	min-width: 391px;
+	background: url(../img/pattern-body.png) repeat;
+	margin: 20px auto;
+	box-shadow: 5px 5px 7px grey;
+}
+
+header {
+	flex: 100%;
+	margin: 11px;
+}
+
+img {
+	max-width: 100%;
+}
+
+section {
+	flex: 60%;
+	height: auto;
+	margin: 11px;
+}
+
+article {
+	display: flex;
+	margin-bottom: 11px;
+	align-items: center;
+	justify-content: center;
+	border-left: #0066B2 5px solid;
+	background-color: #dfdfdf;
+}
+
+article img {
+	width: 40%;
+	height: 40%;
+}
+
+article div {
+	padding: 22px 22px 22px 0px;
+}
+
+article h2 {
+	color: #0066b2;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: 22px;
+}
+
+article p{
+	color: #58595b;
+	font-size: 17px;
+	text-align: justify;
+}
+
+aside {
+	flex: 32%;
+	height: 100%;
+	margin: 11px;
+	color: #FFF;
+	font-weight: bold;
+	border-left: red 5px solid;
+	background-color: #0066b2;
+}
+
+aside ul {
+	padding: 12.5px;
+}
+
+aside li {
+	padding: 5px;
+}
+
+.slider {
+	flex: 100%;
+	width: 698px;
+	height: 320px;
+	margin: 11px;
+	background: url(../img/slide1.jpg) no-repeat;
+	background-size: cover;
+	animation-name: backgroundchange;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes backgroundchange {
+    33% {background: url(../img/slide1.jpg) no-repeat;
+				background-size: cover;
+				}
+    66% {background: url(../img/slide2.jpg) no-repeat;
+				background-size: cover;
+				}
+    100% {background: url(../img/slide3.jpg) no-repeat;
+					background-size: cover;
+				}
+}
+
+footer {
+	flex: 100%;
+	margin: 11px;
+}
+
+footer img {
+	width: 697px;
+}
+
+.footer_bottom {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px 25px 25px;
+	border-top: 1px solid #cdcccd;
+	padding-top: 15px;
+}
+
+.footer_logo {
+	flex: 30%;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer_logo img {
+	width: 60%;
+}
+
+.footer_text {
+	flex: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	font-size: 10px;
+}
+
+.footer_text a {
+	margin: auto;
+}
