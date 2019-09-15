@@ -47,9 +47,9 @@ body {
   font-family: 'Conv_Lucida Sans', sans-serif;
 }
 
-.cv {
-	display: flex;
-  flex-wrap: wrap;
+.flex-container { /*Contenido del documento*/
+	display: flex; /*Mostramos los elementos como contenedores flexibles*/
+  flex-wrap: wrap;/*Especificamos que los elementos flexibles se ajusten de ser necesario*/
 	width: 100%;
 	max-width: 720px;
 	min-width: 391px;
@@ -58,8 +58,8 @@ body {
 	box-shadow: 5px 5px 7px grey;
 }
 
-header {
-	flex: 100%;
+header { /*Cabecera del documento*/
+	flex: 100%; /*Establecemos una longitud flexible del 100%*/
 	margin: 11px;
 }
 
@@ -67,14 +67,14 @@ img {
 	max-width: 100%;
 }
 
-section {
-	flex: 60%;
+section { /*Sección del documento*/
+	flex: 60%;/*Establecemos una longitud flexible del 60%*/
 	height: auto;
 	margin: 11px;
 }
 
-article {
-	display: flex;
+article { /*Artículos del documento*/
+	display: flex;/*Mostramos los elementos como contenedores flexibles*/
 	margin-bottom: 11px;
 	align-items: center;
 	justify-content: center;
@@ -106,7 +106,7 @@ article p{
 }
 
 aside {
-	flex: 32%;
+	flex: 32%;/*Establecemos una longitud flexible del 32%*/
 	height: 100%;
 	margin: 11px;
 	color: #FFF;
@@ -124,17 +124,18 @@ aside li {
 }
 
 .slider {
-	flex: 100%;
+	flex: 100%;/*Establecemos una longitud flexible del 100%*/
 	width: 698px;
 	height: 320px;
 	margin: 11px;
 	background: url(../img/slide1.jpg) no-repeat;
 	background-size: cover;
-	animation-name: backgroundchange;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
+	animation-name: backgroundchange;/*Nombre de la animación*/
+  animation-duration: 30s;/*Duración de la animación*/
+  animation-iteration-count: infinite;/*La animación sera infinita*/
 }
 
+/*Aproximadamente cada 10s cambiara el fondo del bloque*/
 @keyframes backgroundchange {
     33% {background: url(../img/slide1.jpg) no-repeat;
 				background-size: cover;
@@ -147,8 +148,8 @@ aside li {
 				}
 }
 
-footer {
-	flex: 100%;
+footer {/*Pie de página*/
+	flex: 100%;/*Establecemos una longitud flexible del 100%*/
 	margin: 11px;
 }
 
@@ -157,15 +158,15 @@ footer img {
 }
 
 .footer_bottom {
-	display: flex;
-	flex-wrap: wrap;
+	display: flex; /*Mostramos los elementos como contenedores flexibles*/
+	flex-wrap: wrap;/*Especificamos que los elementos flexibles se ajusten de ser necesario*/
 	margin: 50px 25px 25px;
 	border-top: 1px solid #cdcccd;
 	padding-top: 15px;
 }
 
 .footer_logo {
-	flex: 30%;
+	flex: 30%;/*Establecemos una longitud flexible del 30%*/
 	align-items: center;
 	justify-content: center;
 }
@@ -175,7 +176,7 @@ footer img {
 }
 
 .footer_text {
-	flex: 70%;
+	flex: 70%;/*Establecemos una longitud flexible del 70%*/
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
